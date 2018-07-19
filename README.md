@@ -1,2 +1,2 @@
 # DSMnet
-Deep stereo matching worknet
+Deep stereo matching neural network
