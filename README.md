@@ -1,18 +1,78 @@
-<!doctype html>
-<html lang="zh-cmn-Hans">
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="Keywords" content="Coding,Git,SVN,代码托管,Pages,WebIDE,Gist,冒泡,持续集成,开发协作,团队协作,项目管理">
-    <meta name="Description" content="Coding.net 是一个面向开发者的云端开发平台，提供 git/svn 代码托管，代码质量分析，在线 WebIDE，项目管理，开发协作，冒泡社区，提供个人和企业公有云及企业私有云的服务。">
-    <link rel="icon" type="image/x-icon" href="https://dn-coding-net-production-static.qbox.me/platform/favicon.ico">
-    <link rel="shortcut icon" type="image/x-icon" href="https://dn-coding-net-production-static.qbox.me/platform/favicon.ico">
-    <title>Coding - 代码托管 项目管理 WebIDE 企业服务</title>
-    <script>window.PDFJS_WORKER_SRC = 'https://dn-coding-net-production-static.qbox.me/chunk.1b91465388193bdff022.js';// DON'T MODIFY THIS MANUALLY</script>
-<link href="https://dn-coding-net-production-static.qbox.me/index.cd37dcc45a3c3e4e134f487392c1a8ca.css" rel="stylesheet"></head>
-<body>
+Pytorch implementation of the several Deep Stereo Matching(DSM) algorithm, such as Dispnet, DispnetCorr, GCnet, iResnet, PSMnet. 
+The code is only for scientific or personnal use. Please contact me/INRIA for commercial use.
+Email: wangyf_1991@163.com
 
-<div id="container"></div>
+Copyright (C) 2018 yu-feng wang
 
-<script type="text/javascript" src="https://dn-coding-net-production-static.qbox.me/vendor.0202f26c519365b59cb6.js"></script><script type="text/javascript" src="https://dn-coding-net-production-static.qbox.me/chunk.1b91465388193bdff022.js"></script><script type="text/javascript" src="https://dn-coding-net-production-static.qbox.me/chunk.4eed3ed215246e11e303.js"></script></body>
-</html>
+License:
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>
+
+
+## Contents
+
+1. [Introduction](#introduction)
+2. [Usage](#usage)
+3. [Results](#results)
+4. [Contacts](#contacts)
+
+## Introduction
+
+
+
+## Usage
+
+### Dependencies
+
+- [Python2.7](https://www.python.org/downloads/)
+- [PyTorch(0.3.0+)](http://pytorch.org)
+- [KITTI Stereo](http://www.cvlibs.net/datasets/kitti/eval_stereo.php)
+- [Scene Flow](https://lmb.informatik.uni-freiburg.de/resources/datasets/SceneFlowDatasets.en.html)
+
+### Train
+As an example, use the following command to train a DSM(such as DispnetCorr) on  a dataset(such as KITTI2015)
+
+```
+./train_dispnetcorr_kitti.sh
+```
+
+As another example, use the following command to finetune a DSM(such as DispnetCorr) on  a dataset(such as KITTI2015)
+
+```
+./finetune_dispnetcorr_kitti.sh
+```
+You need see the files(train_dispnetcorr_kitti.sh and train_dispnetcorr_kitti.sh) for details. You can alse change the DSM or dataset for train or finetune in the files.
+
+### test
+Use the following command to evaluate the trained DSM(such as DispnetCorr) on  a dataset(such as KITTI2015 train data) with ground truth.
+
+```
+./test_dispnetcorr_kitti.sh
+```
+You need see the file(test_dispnetcorr_kitti.sh) for details.
+
+### submit
+Use the following command to evaluate the trained DSM(such as DispnetCorr) on  a dataset(such as KITTI2015 test data) without ground truth.
+
+```
+./submit_dispnetcorr_kitti.sh
+```
+You need see the file(submit_dispnetcorr_kitti.sh) for details.
+
+### Pretrained Model
+| KITTI 2015 |
+|---|
+|[Pretrained weight](https://)|
+
+
