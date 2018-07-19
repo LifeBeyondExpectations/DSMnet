@@ -24,8 +24,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>
 
 1. [Introduction](#introduction)
 2. [Usage](#usage)
-3. [Results](#results)
-4. [Contacts](#contacts)
 
 ## Introduction
 
