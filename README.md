@@ -50,7 +50,7 @@ As another example, use the following command to finetune a DSM(such as DispnetC
 ```
 ./finetune.sh
 ```
-You need see the files(train_dispnetcorr_kitti.sh and train_dispnetcorr_kitti.sh) for details. You can alse change the DSM or dataset for train or finetune in the files.
+You need see the files(train.sh and finetune.sh) for details. You can alse change the DSM or dataset for train or finetune in the files.
 
 ### test
 Use the following command to evaluate the trained DSM(such as DispnetCorr) on  a dataset(such as KITTI2015 train data) with ground truth.
@@ -58,7 +58,7 @@ Use the following command to evaluate the trained DSM(such as DispnetCorr) on  a
 ```
 ./test.sh
 ```
-You need see the file(test_dispnetcorr_kitti.sh) for details.
+You need see the file(test.sh) for details.
 
 ### submit
 Use the following command to evaluate the trained DSM(such as DispnetCorr) on  a dataset(such as KITTI2015 test data) without ground truth.
@@ -66,7 +66,7 @@ Use the following command to evaluate the trained DSM(such as DispnetCorr) on  a
 ```
 ./submit.sh
 ```
-You need see the file(submit_dispnetcorr_kitti.sh) for details.
+You need see the file(submit.sh) for details.
 
 ### Pretrained Model
 | KITTI 2015 |
