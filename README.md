@@ -42,13 +42,13 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>
 As an example, use the following command to train a DSM(such as DispnetCorr) on  a dataset(such as KITTI2015)
 
 ```
-./train_dispnetcorr_kitti.sh
+./train.sh
 ```
 
 As another example, use the following command to finetune a DSM(such as DispnetCorr) on  a dataset(such as KITTI2015)
 
 ```
-./finetune_dispnetcorr_kitti.sh
+./finetune.sh
 ```
 You need see the files(train_dispnetcorr_kitti.sh and train_dispnetcorr_kitti.sh) for details. You can alse change the DSM or dataset for train or finetune in the files.
 
@@ -56,7 +56,7 @@ You need see the files(train_dispnetcorr_kitti.sh and train_dispnetcorr_kitti.sh
 Use the following command to evaluate the trained DSM(such as DispnetCorr) on  a dataset(such as KITTI2015 train data) with ground truth.
 
 ```
-./test_dispnetcorr_kitti.sh
+./test.sh
 ```
 You need see the file(test_dispnetcorr_kitti.sh) for details.
 
@@ -64,7 +64,7 @@ You need see the file(test_dispnetcorr_kitti.sh) for details.
 Use the following command to evaluate the trained DSM(such as DispnetCorr) on  a dataset(such as KITTI2015 test data) without ground truth.
 
 ```
-./submit_dispnetcorr_kitti.sh
+./submit.sh
 ```
 You need see the file(submit_dispnetcorr_kitti.sh) for details.
 
